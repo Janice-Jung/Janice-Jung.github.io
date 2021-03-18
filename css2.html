@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS!</title>
+<script>
+	function changeCss(){
+		var targetDiv = document.getElementById("innerDiv2");
+		targetDiv.style.backgroundColor = "#20E1FF";
+		}
+	</script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F9EAC0;
+		}
+		div {
+			border: 2px solid #000000; 
+			border-radius: 15px;
+			padding: 20px 5px 20px 5px;
+			margin: 20px;
+			background-color: #FF0000;
+			color: white;
+		}
+
+		div:hover {
+			background-color: #FFFFFF;
+		}
+		div:active {
+			background-color: #000000;
+		}
+
+		span {
+			background-color: #F2F517;
+			color: #0C8719;
+			border: 1px dotted black;
+		}
+		#innerDiv1 { 
+			background-color: #FFFFFF;
+			color: #0000FF;
+		}
+
+		#innerDiv2 {
+			background-color: #92FFCE;
+			color: #4EC357;
+		}
+
+		.insideSpan {
+			background-color: #FBBC1B;
+			color: #5C1BFB;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		Here is a div
+		<div id="innerDiv1" onclick="changeCss()">
+			Div <span class= "insideSpan">inside</span> a div! 1 <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+		</div>
+		<div id="innerDiv2">
+			Div <span class= "insideSpan">inside</span> a div! 2 <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+		</div>
+	</div>
+	<div style="background-color:#F3AF30;"> Here is a div </div>
+	<div style="background-color:#FFF300;"> Here is a div </div>
+	<div style="background-color:#00FF00;"> Here is a div </div> 
+	<div style="background-color:#30BEF3;"> Here is a div </div> 
+	<div style="background-color:#4230F3;"> Here is a div </div> 
+	<div style="background-color:#AF30F3;"> Here is a div </div>  
+</body>
+</html>
