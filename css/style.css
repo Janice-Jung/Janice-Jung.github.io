@@ -1,0 +1,32 @@
+.fork{
+		border: 2px solid #000000; 
+		background-color: #9be2ff;
+		height: 50px;
+		width: 50px;
+	}
+.spoon{
+		border: 2px solid #000000; 
+		background-color: #ffef99;
+		height: 50px;
+		width: 50px;
+	}
+/*
+table {
+	border: 2px solid black;
+}
+
+td {
+	width: 200px;
+	height: 200 px;
+	border: 1px solid #d1d1d1;
+}
+*/
+#gameBoard {
+	display: inline-block;
+
+}
+
+#playerInfo {
+	display: inline-block;
+	vertical-align: 
+}
