@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All About Janice</title>
+<script>
+function isPrime(x) {
+	/*alret("Hello World!")
+	/ Prime number can only e divisible by 1 ad iteself
+	/ p = {2, 3, 5, 7, 11..... 101}
+	/!p = {4,6,8, 15, ..... 225}
+
+	/ x = 49
+	/ let i be a possible divisor, starting from 2
+	/ you check 2, 2 + 1, 2 + 2 ....., x - 1
+	
+	12%7=5
+	11%2=1
+
+	*/
+	//var x = 13;
+
+	/* 8 factors: 1, 2, 4, 8
+		in between 1, 2, sqrt (8), 4, 8
+		so the factors are in pairs but the pairs are split bw sqrt x
+	*/
+	var prime = true; 
+
+	for(var i = 2; i < Math.sqrt(x); i++) {
+		if (x % i ==0) {
+			prime = false
+			break;
+		}
+
+		else {
+			continue;
+
+		}
+	}
+	// 4 + 5 = 0
+	// 4 + " hello" = "4 hello";
+
+	alert(x + " is Prime: " + prime);
+}
+
+function greatestPrime() {
+	var x = 1000000000;
+	
+	}
+
+</script>
+</head>
+<body>
+<h1>Hello World! This is Janice's first webpage!</h1>
+<h2>My Hobbies</h2>
+<ul>
+<li>Games</li>
+<ol type="1">
+	<li>League</li>
+	<li>Mincraft</li>
+</ol>
+<li>Camping</li>
+<li>reading</li>
+<li>doodling</li>
+</ul>
+<hr>
+<b>My Favorite Website:</b> <a href="https://www.youtube.com/">YouTube</a>
+<br>
+<i>My Favorite Pokemon:</i>
+<img src="images/eevee.png"/>
+<br>
+<u>My Social Media</u>
+<br>
+<a href="https://www.instagram.com/mhjanice02" target="_blank"><img src="images/instagram.png" /></a>&nbsp;&nbsp;
+<a href="https://www.facebook.com/janice.jung.125"><img src="images/facebook.png" /></a>&nbsp;&nbsp;
+<a href=""><img src="images/linkedin.png" /></a>
+<br>
+<br>
+<table border="1">
+<tr>
+	<th>Dad</th>
+	<th>Mom</th>
+	<th>Me</th>
+	<th>Julia</th>
+</tr>
+
+<tr>
+	<td><img src="images/Family.jpg" /></td>
+	<td><img src="images/Family.jpg" /></td>
+	<td><img src="images/Family.jpg" /></td>
+	<td><img src="images/Family.jpg" /></td>
+</tr>
+
+<tr>
+	<td rowspan="2">My Crush</td>
+	<td colspan="3">timothee Chalamet</td>
+</tr>
+
+<tr>
+	<td colspan="3"><img src="images/Actor.jpg"></td>
+</tr>
+
+</table>
+<br>
+<button onclick="isPrime(13)">Check Prime</button>
+</body>
+</html>
