@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/master.js"></script>
+</head>
+<body>
+<div id = "gameArea">
+	<div id = "gameBoard">
+<table>
+	<tr>
+		<th colspan="3">tic tac toe</th>
+	</tr>	
+	<tr>
+		<td class="spoon" id="square0" onclick="changeSquare('square0')"></td>
+		<td class="fork" id="square1" onclick="changeSquare('square1')"></td>
+		<td class="spoon" id="square2" onclick="changeSquare('square2')"></td>
+	</tr>
+
+	<tr>
+		<td class="fork" id="square3" onclick="changeSquare('square3')"></td>
+		<td class="spoon" id="square4" onclick="changeSquare('square4')"></td>
+		<td class="fork" id="square5" onclick="changeSquare('square5')"></td>
+	</tr>
+	<tr>
+		<td class="spoon" id="square6" onclick="changeSquare('square6')"></td>
+		<td class="fork" id="square7" onclick="changeSquare('square7')"></td>
+		<td class="spoon" id="square8" onclick="changeSquare('square8')"></td>
+	</tr>
+</table>
+
+<script>
+/*
+	<div class="fork"></div>
+	for (var i = 1; i <=5000; i++)
+		document.writeln( + "<br>");
+	
+	var counter = 0
+	var builder = "<table>";
+
+	for (var i = 0; i < 3; i++){
+		builder += "<tr>" 	need the table row to be inside the outer loop but outside the inner loop 
+		for (var j = 0; j <3; j++)	we are adding another loop and adding new variable j  {
+			if (counter % 2 ==0){
+				buidler += "<td class='spoon'>Yes</td>";
+			}
+			else {
+				buidler += "<td class='fork'>Yes</td>";
+			}
+			builder += "<td><td>";
+		} 
+		builder +="</tr>"
+	}	
+
+builder += "</table>";
+document.writeln(builder);
+*/
+</script>
+	</div>
+	<div id="playerInfo">
+		
+		Player 1&nbsp;&nbsp;
+		<input type="text" id="player1Name" placeholder="Please enter your name" size="25" />
+			<br>
+			<br>
+			<select id="player1Image" onchange="enterPlayer('player1')">
+				<option value="#">-- Select your avatar --</option>
+				<option value="Reyna">Reyna</option>
+				<option value="Sage">Sage</option>
+				<option value="Jett">Jett</option>
+			</select>
+		<div id="player1Info">
+		</div>
+		<hr>
+		Player 2&nbsp;&nbsp;
+		<input type="text" id="player2Name" placeholder="Please enter your name" size="25" />
+			<br>
+			<br>
+			<select id="player2Image" onchange="enterPlayer('player2')">>
+				<option value="#">-- Select your avatar --</option>
+				<option value="Sova">Sova</option>
+				<option value="Killjoy">Killjoy</option>
+				<option value="Phoenix">Phoenix</option>
+			</select>
+			<div id="player2Info">
+			</div>
+			<br>
+			
+	</div>
+</div>
+
+
+
+<div>
+	<button onclick="reset()">Reset</button>
+</div>
+
+
+</body>
+</html>
+<!-- from second class
+
+	start w <table>
+	then <tr> for table row
+		<td> table datat
+
+	add border attritbe to table <table border = "1">
+	<th> defining table header (this makes the data bolded and center aligned)
+
+	the styles of spoon and fork are found on the style.css file in folder css 
+-->
